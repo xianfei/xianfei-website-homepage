@@ -1,17 +1,110 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>王衔飞的网站</title>
-</head>
-<body>
-    <h2>欢迎访问衔飞的主页 - xianfei.win</h2>
-    <p>Hosted on Github Pages, （该页面未来将被美化）</p>
-    <h3>个人博客：<a href="https://blog.xianfei.win/">blog.xianfei.win</a></h3>
-    <h3>摄影作品展：<a href="https://photography.xianfei.win/">photography.xianfei.win</a></h3>
-    <h3>个人简历：<a href="https://resume.xianfei.win/">resume.xianfei.win</a></h3>
-    <h3>论文集合：<a href="https://papers.xianfei.win/">papers.xianfei.win</a></h3>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>王衔飞的网站</title>
+        <meta name="og:site_name" content="衔飞的网站">
+        <meta name="apple-mobile-web-app-title" content="衔飞的网站">
+        <link
+            href="https://fonts.cdnfonts.com/css/smiley-sans"
+            rel="stylesheet"
+        />
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            @font-face {
+                font-family: "SmileySans";
+                src: url("https://blog.xianfei.win/SmileySans-Oblique.otf.woff2")
+                    format("woff2");
+            }
+
+            .bg {
+                background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                position: fixed;
+                z-index: -1;
+                width: 100vw;
+            }
+
+            .bg2 {
+                background: linear-gradient(180deg, #fff0, #fff, #fff);
+                margin: 0;
+                padding: 0;
+                top: 40vh;
+                height: 100vh;
+                position: fixed;
+                z-index: -1;
+                width: 100vw;
+            }
+
+            .content {
+                max-width: 500px;
+                margin: 0 auto;
+                padding: 0 30px;
+            }
+
+            .title {
+                color: #2d4a6d;
+                margin: 50px 0;
+                display: inline-block;
+                font-size: 32px;
+                font-family: "SmileySans", sans-serif;
+            }
+
+            .list {
+                background-color: #fff;
+                height: 600px;
+                border-radius: 20px;
+                /* box-shadow: 0px 0px 10px #fff2; */
+                padding: 20px;
+            }
+
+            .item {
+                height: 50px;
+                line-height: 50px;
+                background-color: #d8e9f6;
+                border-radius: 15px;
+                margin-top: 15px;
+                color: #0a305f;
+                padding: 0 20px;
+                font-size: 16px;
+                font-weight: 500;
+                white-space: nowrap;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg"></div>
+        <div class="bg2"></div>
+        <div class="content">
+            <span class="title">
+                欢迎访问<br />
+                <span style="font-size: 50px;color: #0a305f;font-weight: 600;">衔飞的主页!</span><br />
+                Welcome to xianfei.win
+            </span>
+            <div class="list">
+                本域名站点链接：
+                <div class="item">
+                    衔飞的博客：<a href="https://blog.xianfei.win/">blog.xianfei.win</a>
+                </div>
+                <div class="item">
+                    摄影展：<a href="https://photography.xianfei.win/">photography.xianfei.win</a>
+                </div>
+                <div class="item">
+                    个人简历：<a href="https://resume.xianfei.win/">resume.xianfei.win</a>
+                </div>
+                <div class="item">
+                    论文集合：<a href="https://papers.xianfei.win/">papers.xianfei.win</a>
+                </div>
+
+            </div>
+        </div>
+    </body>
 </html>
